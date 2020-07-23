@@ -1,3 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.thinknyx.demo</groupId>
+  <artifactId>indian-states</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  <name>Indian States & Districts</name>
+  <url>https://thinknyx.com</url>
+        
+        <properties>
+                <sonar.projestKey>kmayer10_liquor-shop-demo</sonar.projectKey>
+                  <sonar.organization>kmayer10</sonar.organization>
+                  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+                  <sonar.login>faff74d8cb559ee0ed1500446f12b3918db42332</sonar.login>
+        </properties>       
+    
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
 <!--https://mvnrepository.com/artifact/org.eclipse.equinox/javax.servlet -->
 <dependency>
         <groupId>javax.servlet</groupId>
@@ -32,7 +57,7 @@
                     <port>8081</port>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
                 <version>5.3.2</version>
@@ -43,7 +68,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>            
+            </plugin>-->           
         </plugins>
     </build>
 </project>
